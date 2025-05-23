@@ -17,9 +17,14 @@ namespace CtorAndObjInitializers
             Class1 class2 = new Class1(90);
             Console.WriteLine(class2.X); // 90
         }
-        static void Main()
+        static void Main2()
         {
             Class2 class2 = new Class2() { X = 10, P1 = "abc", P2 = "xyz" }; // internally call setter for all the props
+        }
+
+        static void Main()
+        {
+
         }
     }
 

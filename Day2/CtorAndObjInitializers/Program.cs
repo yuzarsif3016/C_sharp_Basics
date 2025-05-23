@@ -8,7 +8,7 @@ namespace CtorAndObjInitializers
 {
      class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Class1 class1 = new Class1();
            
@@ -16,6 +16,10 @@ namespace CtorAndObjInitializers
 
             Class1 class2 = new Class1(90);
             Console.WriteLine(class2.X); // 90
+        }
+        static void Main()
+        {
+            Class2 class2 = new Class2() { X = 10, P1 = "abc", P2 = "xyz" }; // internally call setter for all the props
         }
     }
 
@@ -61,5 +65,17 @@ namespace CtorAndObjInitializers
 
         
         private int X1 { get; set; }  
+    }
+
+    //object initializers example
+    public class Class2
+    {
+        public int X { get; set; } // property
+        public string P1 { get; set; } // property
+        public string P2 { get; set; } // property
+        public Class2()
+        {
+            Console.WriteLine("Default ctor called ");
+        }
     }
 }

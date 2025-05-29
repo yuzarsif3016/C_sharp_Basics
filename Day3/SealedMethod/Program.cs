@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MethodHiding
+namespace SealedMethod
 {
-    public class Program
+    internal class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Derived d = new Derived();
-            d.M(); // Calls Derived M()
         }
     }
+
     public class Base
     {
-        public void M()
+        public virtual void M()
         {
 
             Console.WriteLine("Base M() called");
@@ -25,7 +24,7 @@ namespace MethodHiding
 
     public class Derived : Base
     {
-        public new void M()
+        public sealed void M()
         {
 
             Console.WriteLine("Derived M() called");
@@ -34,7 +33,7 @@ namespace MethodHiding
 
     public class GrandDerived : Derived
     {
-        public new void M()
+        public override void M() // This will cause a compile-time error because M() is sealed in Derived
         {
             Console.WriteLine("GrandDerived M() called");
         }

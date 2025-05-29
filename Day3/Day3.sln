@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58 d17.14
+VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMethod", "VirtualMethod\VirtualMethod.csproj", "{202E2BCA-4A81-43E0-A8CD-754005ABD5BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverloading", "MethodOverloading\MethodOverloading.csproj", "{E2409EFC-6ECA-4697-89EA-110B7271FC9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodHiding", "MethodHiding\MethodHiding.csproj", "{F3A680B6-E0D6-4F5A-8F9E-35ADE44D6C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SealedMethod", "SealedMethod\SealedMethod.csproj", "{39313D69-A1D6-41B3-B00E-C3B2740666C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F3A680B6-E0D6-4F5A-8F9E-35ADE44D6C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3A680B6-E0D6-4F5A-8F9E-35ADE44D6C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3A680B6-E0D6-4F5A-8F9E-35ADE44D6C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39313D69-A1D6-41B3-B00E-C3B2740666C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39313D69-A1D6-41B3-B00E-C3B2740666C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39313D69-A1D6-41B3-B00E-C3B2740666C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39313D69-A1D6-41B3-B00E-C3B2740666C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
